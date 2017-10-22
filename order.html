@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Jonny C Galv Delivers</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class=".deep-purple.darken-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="./index.html" class="brand-logo">Galvanize Delivers</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Order Delivery</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Order Delivery</a></li>
+        <li><a href="./index.html">Home Page</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner" style="background-image: .img/hero.jpg">
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div id='menu' class="row">
+      <div class="col s12 m7 l7">
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <img class="menuimg"src="img/burger.jpg" alt="Burger">
+            <h5 class="center">A Boiger!</h5>
+            <p class="light">$10.50</p>
+            <button type="button" name="button" value="Add To Order" class="btn-large waves-effect waves-light green-fade-in-out">Add To Order</button>
+          </div>
+        </div>
+
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <img class="menuimg"src="img/ice_cream.jpg" alt="Ice Cream">
+            <h5 class="center">Oice Cream!</h5>
+            <p class="light">$5.00</p>
+            <button type="button" name="button" value="Add To Order" class="btn-large waves-effect waves-light green-fade-in-out">Add To Order</button>
+          </div>
+        </div>
+
+        <div class="col s12 m12 l6">
+          <div class="icon-block">
+            <img class="menuimg"src="img/pizza.jpg" alt="Pizza">
+            <h5 class="center">Piece-a-Pizza!</h5>
+            <p class="light">$8.00</p>
+            <button type="button" name="button" value="Add To Order" class="btn-large waves-effect waves-light green-fade-in-out">Add To Order</button>
+          </div>
+        </div>
+
+      <div class="col s12 m12 l6">
+        <div class="icon-block">
+          <img class="menuimg"src="img/ribs.jpg" alt="Pizza">
+          <h5 class="center">Rack-a-Ribs!</h5>
+          <p class="light">$11.00</p>
+          <button type="button" name="button" value="Add To Order" class="btn-large waves-effect waves-light green-fade-in-out">Add To Order</button>
+        </div>
+      </div>
+     </div>
+
+      <div class="col s12 m5 l5">
+          <h5>Order</h5>
+          <table class="striped">
+            <thead>
+              <tr>
+                <th data-field="name">Item</th>
+                <th class="right-align" data-field="price">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <div class="row summary">
+            <div class="col s9 m9 l9">
+              <div class="right-align">Subtotal</div>
+              <div class="right-align">Tax</div>
+              <div class="right-align totals">Total</div>
+            </div>
+            <div class="col s3 m3 l3">
+              <div class="right-align" id="subtotal">$0.00</div>
+              <div class="right-align" id="tax">$0.00</div>
+              <div class="right-align totals" id="total">$0.00</div>
+            </div>
+          </div>
+
+          <form class="" action="order.html" method="post">
+            <div class="input-field">
+              <i class="material-icons prefix blue-text accent-2 active">account_circle</i>
+              <input id="name" type="text" class="validate" placeholder="" required>
+              <label for="name" class="active">Name</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix blue-text accent-2 active">phone</i>
+              <input id="phone" type="tel" class="validate" placeholder="(###) ###-####" required>
+              <label id="phone-label"for="phone" class="active">Phone</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix blue-text accent-2 active">business</i>
+              <input id="address" type="text" class="validate" placeholder="" required>
+              <label for="address" class="active">Address</label>
+            </div>
+            <div class="row center">
+              <button id="order-button" class="btn-large waves-effect waves-light" type="submit" name="order" disabled>Place Order <i class="material-icons">send</i></button>
+              <button id="cancel" class="btn-large waves-effect waves-light red accent-2" type="button" name="cancel">Cancel<i class="material-icons">delete</i></button>
+            </div>
+          </form>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer #23947b">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Galvanize Delivers</h5>
+          <p class="grey-text text-lighten-4">Fine Dining, Delivered.</p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      Copyright © 2017 Galvanize>
+    </div>
+    <div class="fixed-toast">
+
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script type="text/javascript" src="./gdelivers.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
